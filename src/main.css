@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  cursor: move;
+}
+
+.adorners {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adorners {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adorners .handle {
+  position: absolute;
+  width: 8px; /* Reduce width for better alignment */
+  height: 8px; /* Reduce height for better alignment */
+  background-color: black;
+  cursor: pointer;
+}
+
+.adorners .handle.top-left {
+  top: 0;
+  left: 0;
+}
+
+.adorners .handle.top-right {
+  top: 0;
+  right: 0;
+}
+
+.adorners .handle.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.adorners .handle.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.adorners .handle.top {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.adorners .handle.right {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.adorners .handle.bottom {
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+  bottom: 0;
+}
+
+.adorners .handle.left {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
